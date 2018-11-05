@@ -12,7 +12,10 @@ class DevelopmentConfig(BaseConfig):
 	SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 
 class TestingConfig(BaseConfig):
+<<<<<<< HEAD
+=======
 	""" Testing Configuration """
+>>>>>>> 59a433577b98b7f6b4e03b9c92d92cb391d2c20e
 	TESTING = True
 	SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_TEST_URL')
 
