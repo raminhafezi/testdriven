@@ -24,7 +24,7 @@ class User(db.Model):
 		self.username= username
 		self.email = email
 
-print(app.config, file=sys.stderr)
+#print(app.config, file=sys.stderr)
 @app.route('/users/ping', methods=['GET'])
 def ping_pong():
 	return jsonify({
