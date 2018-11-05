@@ -1,10 +1,6 @@
 # services/users/project/tests/base.py
-
-
 from flask_testing import TestCase
-
 from project import app, db
-
 
 class BaseTestCase(TestCase):
     def create_app(self):
@@ -19,8 +15,3 @@ class BaseTestCase(TestCase):
         db.session.remove()
         db.drop_all()
 
-class BaseConfig:
-	"""Base configuration"""
-	TESTING = False
-	SQLALCHEMY_TRACK_MODIFICATIONS = False
-	SECRET_KEY = 'my_precious'
